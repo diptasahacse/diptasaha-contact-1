@@ -1,0 +1,204 @@
+/*===================================================
+Template Name: Example
+Template URI: https://www.diptasaha.com/projects/
+Author: Dipta Saha
+Author URI: https://www.diptasaha.com
+Version: 1.0
+Description: An Awesome Personal portfolio template.
+Support: diptasoftwaresolution@gmail.com
+====================================================*/
+
+
+/*===================================================
+CSS INDEX
+----------
+1. Google Fonts
+2. Common CSS
+3. Reusable Components
+
+
+
+
+====================================================*/
+
+/* 1. Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* 2. Common CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    color: #111111;
+    background: #F2F2F2;
+    font-size: 62.5%;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+}
+h2{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5rem;
+}
+h3{
+    font-weight: 700;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    
+}
+h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1.5rem;
+}
+a:link,
+a:hover {
+    text-decoration: none;
+}
+p{
+    font-size: 1.6rem;
+}
+hr{
+    border: 0;
+    border-top: .1rem solid #808080;
+    
+}
+
+
+/* 3. Reusable Components */
+.row{
+    max-width: 109rem;
+    margin: auto;
+}
+section{
+    padding: 4rem 0;
+    
+}
+
+
+.btn{
+    font-size: 1.6rem;
+    background: #000;
+    display: inline-block;
+    border: .2rem solid transparent;
+    padding: 1.7rem 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .6s;
+    cursor:pointer;
+}
+.clear-fix::after{
+    content: '';
+    display: table;
+    clear: both;
+    
+}
+
+/* 3. Contact Section */
+.contact-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    margin: 5rem 0;
+}
+.contact-grid-item{
+    text-align: center;
+    padding: 3rem 3rem;
+}
+ion-icon{
+    font-size: 5rem;
+    color: #999999;
+    margin-bottom: 1rem
+}
+span{
+    font-size: 1.5rem;
+}
+.grid-mag-location-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4rem;
+}
+.grid-mag-location-item{
+    
+}
+.grid-mag-location-item p{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+.form{
+    margin-top: 1.5rem;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form textarea
+{
+    box-sizing: border-box;
+    width: 100%;
+    background: #FFFFFF;
+    border: 0;
+    margin: .5rem 0;
+    font-size: 1.6rem;
+    padding: .7rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.form textarea{
+    height: 20rem;
+    resize: horizontal;
+}
+.form [type="submit"]{
+    padding: 1.5rem 3rem;
+    background: transparent;
+    color: #000;
+    border: .2rem solid #3E3E3E;
+    font-family: 'Open Sans', sans-serif;
+    color: #3E3E3E;
+    margin-top: 2rem;
+}
+.form [type="submit"]:hover{
+    background: #FFFFFF;
+}
+.grid-mag-location-item iframe{
+    width: 100%;
+    height: 32rem;
+    margin-top: 2rem;
+}
+/* 4. Footer */
+#footer{
+    background: #333333;
+    text-align: center;
+    padding: 4rem
+}
+#footer p{
+    color: #fff;
+}
+#footer p a{
+    color: #fd2b2b;
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: .3rem;
+    border: .2rem solid transparent;
+    transition: 1s;
+}
+#footer p a:hover{
+    border-color: #fd2b2b;
+    color: #fff;
+}
